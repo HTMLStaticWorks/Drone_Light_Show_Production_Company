@@ -1,1 +1,644 @@
-hello
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drone Light Show Production Company | Sky Art & Aerial Shows</title>
+  <meta name="description"
+    content="Award-winning drone light show productions for cities, brands, festivals, and sporting events. FAA compliant, safety-first enterprise-grade aerial animations.">
+  <link rel="icon" type="image/png" href="assets/images/drone_logo.png">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Style Sheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "AeroGlow Drone Light Shows",
+    "description": "Award-winning drone light show productions for cities, brands, festivals, and sporting events.",
+    "url": "index.html",
+    "telephone": "+1-555-019-2834",
+    "priceRange": "$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "100 Drone Flight Way",
+      "addressLocality": "Metro City",
+      "addressRegion": "MC",
+      "postalCode": "12345",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+</head>
+
+<body class="dark-theme">
+
+  <!-- Header / Navigation Menu -->
+  <header>
+    <nav class="navbar navbar-expand-xl navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html" id="navLogo">
+          <!-- Premium tech logo placeholder -->
+          <span class="fs-4 fw-bold text-white"><img src="assets/images/drone_logo.png" alt="AeroGlow Logo"
+              class="me-2">AERO<span class="text-info">GLOW</span></span>
+        </a>
+
+        <!-- Toggle button for mobile -->
+        <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-1"></i>
+        </button>
+
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header border-bottom border-secondary">
+            <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-xl-center">
+              <li class="nav-item"><a class="nav-link nav-link-custom active px-3" href="index.html">Home 1</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="home-2.html">Home 2</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="blog.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="d-flex align-items-center gap-2 flex-wrap">
+              <!-- Localization & Theme Toggles -->
+              <button class="nav-toggle-btn rtl-toggle" id="rtlBtn" aria-label="Toggle RTL">RTL</button>
+              <button class="nav-toggle-btn theme-toggle" id="themeBtn" aria-label="Toggle Theme"></button>
+
+              <!-- Login CTA -->
+              <a href="login.html" class="btn btn-secondary-custom py-2 px-3" id="loginNav">Login</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Slide index pagination (Version E) -->
+  <div class="slide-indicator" id="slideDots"></div>
+
+
+  <!-- Main Scroll Snapping Wrapper -->
+  <main class="snap-container">
+
+    <!-- 1. Hero Section (Full Screen Video Background) -->
+    <section class="snap-section video-hero" id="home">
+      <div class="video-background-container">
+        <!-- High-quality stock footage of night lights / city sky as drone preview -->
+        <video class="video-bg" autoplay loop muted playsinline>
+          <source
+            src="https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c02fba7dbe2087d4d0535b1f20259270&profile_id=139&oauth2_token_id=57447761"
+            type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+      </div>
+
+      <div class="container relative-content text-center py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <h1 class="mb-4">Transforming Night Skies</h1>
+            <p class="lead text-secondary mb-5 mx-auto max-width-700">
+              Award-winning drone light show productions.
+            </p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <a href="#contact" class="btn btn-primary-custom btn-lg">Request a Proposal</a>
+              <a href="#showreel" class="btn btn-secondary-custom btn-lg">Watch Show Reel</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Clients / Trust Bar -->
+    <section class="snap-section d-flex align-items-center aurora-bg" id="trust">
+      <div class="container py-5 text-center">
+        <h2 class="h3 mb-5 text-white">Trusted by Leading Event Organizers & Public Institutions</h2>
+        <div class="row align-items-center justify-content-center g-4">
+          <div class="col-6 col-md-3">
+            <div class="glass-card py-3 d-flex justify-content-center align-items-center">
+              <span class="fs-4 fw-bold text-secondary opacity-70"><i class="bi bi-building me-2"></i>Metropolis
+                Gov</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="glass-card py-3 d-flex justify-content-center align-items-center">
+              <span class="fs-4 fw-bold text-secondary opacity-70"><i class="bi bi-rocket-takeoff me-2"></i>Nexus
+                Media</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="glass-card py-3 d-flex justify-content-center align-items-center">
+              <span class="fs-4 fw-bold text-secondary opacity-70"><i class="bi bi-globe me-2"></i>Apex Festivals</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="glass-card py-3 d-flex justify-content-center align-items-center">
+              <span class="fs-4 fw-bold text-secondary opacity-70"><i class="bi bi-award me-2"></i>Olympia Sports</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Featured Show Reel & Statistics -->
+    <section class="snap-section position-relative" id="showreel">
+      <div class="video-background-container">
+        <video class="video-bg" autoplay loop muted playsinline>
+          <source
+            src="https://player.vimeo.com/external/392237070.sd.mp4?s=d7fa2cb89f07f433a7e08f86ecf177c44e99f5a2&profile_id=139&oauth2_token_id=57447761"
+            type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+      </div>
+
+      <div class="container h-100 d-flex flex-column justify-content-between py-5">
+        <div></div>
+        <div class="row w-100 justify-content-between align-items-end">
+          <div class="col-lg-6 mb-4 mb-lg-0 text-start">
+            <h2 class="mb-3 text-white">Spectacular Aerial Storytelling</h2>
+            <p class="text-secondary">Watch how we choreograph hundreds of fully autonomous drones synchronized down to
+              the millisecond to paint the sky.</p>
+          </div>
+
+          <!-- Floating Statistics Card -->
+          <div class="col-lg-5 col-xl-4 stats-floating-card">
+            <div class="glass-card">
+              <h3 class="h4 text-info mb-4">Operations by the Numbers</h3>
+              <div class="row g-3">
+                <div class="col-6 text-start">
+                  <span class="fs-3 fw-bold text-white d-block">500+</span>
+                  <small class="text-secondary">Shows Done</small>
+                </div>
+                <div class="col-6 text-start">
+                  <span class="fs-3 fw-bold text-white d-block">50+</span>
+                  <small class="text-secondary">Cities Visited</small>
+                </div>
+                <div class="col-6 text-start">
+                  <span class="fs-3 fw-bold text-white d-block">1M+</span>
+                  <small class="text-secondary">Live Spectators</small>
+                </div>
+                <div class="col-6 text-start">
+                  <span class="fs-3 fw-bold text-white d-block">100%</span>
+                  <small class="text-secondary">FAA Compliant</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Services Section -->
+    <section class="snap-section aurora-bg" id="services">
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <h2 class="mb-3">Our Drone Show Services</h2>
+          <p class="text-secondary max-width-600 mx-auto">We provide full-service end-to-end event conceptualization,
+            choreography, safety auditing, and live execution.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-3">
+            <div class="glass-card h-100 text-center d-flex flex-column justify-content-between">
+              <div>
+                <i class="bi bi-building-check text-info fs-1 d-block mb-3"></i>
+                <h3 class="h4 text-white">Corporate Events</h3>
+                <p class="text-secondary mt-2">Elevate product launches, corporate anniversaries, and conventions with
+                  dynamic branded aerial configurations.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="glass-card h-100 text-center d-flex flex-column justify-content-between">
+              <div>
+                <i class="bi bi-bank text-info fs-1 d-block mb-3"></i>
+                <h3 class="h4 text-white">Government</h3>
+                <p class="text-secondary mt-2">Stunning national holidays, regional tourism campaigns, and civic
+                  celebrations with massive public impact.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="glass-card h-100 text-center d-flex flex-column justify-content-between">
+              <div>
+                <i class="bi bi-trophy text-info fs-1 d-block mb-3"></i>
+                <h3 class="h4 text-white">Sports & Entertainment</h3>
+                <p class="text-secondary mt-2">Electrifying opening ceremonies, stadium shows, concert backing
+                  animations, and festival integrations.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="glass-card h-100 text-center d-flex flex-column justify-content-between">
+              <div>
+                <i class="bi bi-magic text-info fs-1 d-block mb-3"></i>
+                <h3 class="h4 text-white">Custom Storytelling</h3>
+                <p class="text-secondary mt-2">Bespoke 3D animations, custom character modeling, and sky writing built
+                  directly to match your narrative.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Technical Capabilities -->
+    <section class="snap-section aurora-bg" id="capabilities">
+      <div class="container py-5 text-center">
+        <h2 class="mb-3">Cutting-Edge Aerial Technology</h2>
+        <p class="text-secondary max-width-600 mx-auto mb-5">
+          We operate one of the industry's most advanced drone fleets, engineered for precision and visual excellence.
+        </p>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card h-100">
+              <i class="bi bi-grid-3x3-gap text-info fs-1 d-block mb-3"></i>
+              <h3 class="h4 text-white">Fleet Capacity</h3>
+              <p class="text-secondary mt-2">Deployments scaling from 100, 300, to 500+ synchronized drones.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card h-100">
+              <i class="bi bi-bezier2 text-info fs-1 d-block mb-3"></i>
+              <h3 class="h4 text-white">Show Design</h3>
+              <p class="text-secondary mt-2">Photorealistic 3D structures, animated corporate logos, and complex narratives.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card h-100">
+              <i class="bi bi-cpu text-info fs-1 d-block mb-3"></i>
+              <h3 class="h4 text-white">Precision Tech</h3>
+              <p class="text-secondary mt-2">Centimeter-level RTK GPS positioning for razor-sharp aerial renderings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5b. Safety & Compliance -->
+    <section class="snap-section aurora-bg" id="safety">
+      <div class="container py-5 text-center">
+        <div class="max-width-800 mx-auto mb-4">
+          <h2 class="mb-4">Enterprise Safety & Compliance</h2>
+          <p class="text-secondary mb-4">
+            Safety compliance is hardcoded into our workflows. We manage all airspace authorizations, flight permits, and safety redundancies.
+          </p>
+          <div class="d-block text-start d-inline-block mx-auto mb-4">
+            <ul class="list-unstyled d-flex flex-column gap-3 text-secondary">
+              <li><i class="bi bi-shield-check text-info me-2"></i> Double-redundant real-time telemetry backups.</li>
+              <li><i class="bi bi-geo-alt text-info me-2"></i> Real-time geofencing and active safety kill switches.</li>
+              <li><i class="bi bi-file-earmark-check text-info me-2"></i> Fully certified FAA Part 107 pilots & DGCA clearances.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="glass-card text-start">
+              <h3 class="h4 text-white mb-3"><i class="bi bi-shield-fill-check text-info me-2"></i>Safety First</h3>
+              <p class="text-secondary mb-0">Every single show runs through rigorous pre-flight checks, simulation routines, active geofencing coordinates, and double-redundant pilot telemetry systems to ensure absolute ground security.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Drone Gallery Section -->
+    <section class="snap-section" id="gallery">
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <h2 class="mb-3">Aerial Masterpieces</h2>
+          <p class="text-secondary max-width-600 mx-auto">Explore snapshots of our real, live drone performances
+            executed across the world.</p>
+        </div>
+
+        <!-- Gallery Masonry with User-Provided Images -->
+        <div class="gallery-masonry">
+          <div class="gallery-item">
+            <img
+              src="assets/images/gallery_1.jpg"
+              alt="Drone formation design sample">
+            <div class="gallery-item-overlay">
+              <span class="fw-bold text-white d-block">Logos in the Sky</span>
+              <small class="text-secondary">Brand animations</small>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="assets/images/gallery_2.jpg"
+              alt="Holiday drone celebration lights">
+            <div class="gallery-item-overlay">
+              <span class="fw-bold text-white d-block">National Day Event</span>
+              <small class="text-secondary">Government celebration</small>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="assets/images/gallery_3.jpg"
+              alt="Stadium drone show opening">
+            <div class="gallery-item-overlay">
+              <span class="fw-bold text-white d-block">Stadium Opening Ceremony</span>
+              <small class="text-secondary">Sports show</small>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="assets/images/gallery_4.jpg"
+              alt="City festival show display">
+            <div class="gallery-item-overlay">
+              <span class="fw-bold text-white d-block">City Lights Festival</span>
+              <small class="text-secondary">Public celebration</small>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="assets/images/gallery_5.jpg"
+              alt="Bespoke shapes layout">
+            <div class="gallery-item-overlay">
+              <span class="fw-bold text-white d-block">Bespoke Storytelling</span>
+              <small class="text-secondary">Custom shapes</small>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="assets/images/gallery_6.jpg"
+              alt="Spectacular lighting coordinates">
+            <div class="gallery-item-overlay">
+              <span class="fw-bold text-white d-block">Precision Coordinates</span>
+              <small class="text-secondary">Multi-colored sync</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. How It Works -->
+    <section class="snap-section aurora-bg" id="how-it-works">
+      <div class="container py-5 text-start">
+        <div class="row align-items-center">
+          <div class="col-lg-5 mb-5 mb-lg-0">
+            <h2 class="mb-3">Our Production Blueprint</h2>
+            <p class="text-secondary">From first concept sketch to the final automated sync, here is how we safely and
+              successfully bring your vision into the heavens.</p>
+          </div>
+          <div class="col-lg-7">
+            <div class="timeline-container">
+              <div class="timeline-item">
+                <h3 class="h5 text-white">01. Discovery</h3>
+                <p class="text-secondary">We discuss event objectives, site geometry, budget constraints, and regulatory
+                  requirements.</p>
+              </div>
+              <div class="timeline-item">
+                <h3 class="h5 text-white">02. Creative Design</h3>
+                <p class="text-secondary">Our 3D animators storyboard flight formations and create color palette
+                  timelines.</p>
+              </div>
+              <div class="timeline-item">
+                <h3 class="h5 text-white">03. Simulation</h3>
+                <p class="text-secondary">Verify collisions and safety tolerances using specialized computer emulation
+                  routines.</p>
+              </div>
+              <div class="timeline-item">
+                <h3 class="h5 text-white">04. Deployment</h3>
+                <p class="text-secondary">On-site setup, coordinate calibration, RTK GPS checks, and localized ground
+                  inspections.</p>
+              </div>
+              <div class="timeline-item">
+                <h3 class="h5 text-white">05. Live Performance</h3>
+                <p class="text-secondary">Launch the show. Gaze upwards as the fleet executes the choreographed flight
+                  plan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. FAQ Section -->
+    <section class="snap-section aurora-bg" id="faq">
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <h2 class="mb-3">Frequently Asked Questions</h2>
+          <p class="text-secondary">Answers to the most common queries from municipal governments and corporate
+            planners.</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion accordion-custom" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="false" aria-controls="collapseOne">
+                    How many drones can be used?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    We support scales from 100 drones (simple text and symbols) to 300, 500, or even 1000+ drones for
+                    dense 3D graphic animations and national events.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    How far in advance should events be booked?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    We recommend 6 to 12 weeks. This gives enough time to design customized storyboards, get FAA/local
+                    aviation approvals, and complete pilot assignments.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Are permits required?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Yes. We handle all airspace authorizations, municipal fire marshal permits, and FAA waivers directly
+                    so you do not have to worry about red tape.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Can custom logos be displayed?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Absolutely. We render logos, tagline animations, and custom corporate messaging optimized for flight
+                    visibility from multiple viewing angles.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    What weather conditions affect shows?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Shows cannot fly in heavy rain or when wind speeds exceed 25 mph. In case of bad weather, we
+                    coordinate backup schedules to execute the flight.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Final CTA & Contact Request Section -->
+    <section class="snap-section" id="contact">
+      <div class="container py-5 text-center">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="mb-4">Ready to Create a Spectacular Sky Experience?</h2>
+            <p class="text-secondary mb-5">Get in touch with our operations team to receive a feasibility study and
+              drone count package recommendation.</p>
+
+            <div class="glass-card text-start p-4 p-md-5">
+              <form class="needs-validation-custom" novalidate id="proposalForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="clientName" class="form-label text-white">Your Name</label>
+                    <input type="text" class="form-control form-control-custom" id="clientName" required
+                      placeholder="John Doe">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="clientEmail" class="form-label text-white">Email Address</label>
+                    <input type="email" class="form-control form-control-custom" id="clientEmail" required
+                      placeholder="john@enterprise.com">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="clientOrg" class="form-label text-white">Organization / City</label>
+                    <input type="text" class="form-control form-control-custom" id="clientOrg" required
+                      placeholder="Metro Government Office">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="droneEstimate" class="form-label text-white">Target Drone Count</label>
+                    <select class="form-select form-control-custom" id="droneEstimate" required>
+                      <option value="" disabled selected>Select scale...</option>
+                      <option value="100">100 Drones (Logo / Text)</option>
+                      <option value="300">300 Drones (Medium Formations)</option>
+                      <option value="500">500+ Drones (Premium 3D Shapes)</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label for="eventDetails" class="form-label text-white">Event Vision & Date</label>
+                    <textarea class="form-control form-control-custom" id="eventDetails" rows="4" required
+                      placeholder="Briefly describe the occasion, location, and desired date..."></textarea>
+                  </div>
+                  <div class="col-12 text-center mt-4">
+                    <button type="submit" class="btn btn-primary-custom px-5">Submit Request</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer embedded inside last snapped section for neatness -->
+      <footer class="py-5 mt-5">
+        <div class="container">
+          <div class="row g-4 justify-content-between text-start">
+            <div class="col-md-4">
+              <span class="fs-4 fw-bold text-white"><img src="assets/images/drone_logo.png" alt="AeroGlow Logo"
+                  class="me-2 footer-logo-img">AERO<span class="text-info">GLOW</span></span>
+              <p class="text-secondary mt-3">Transforming Night Skies Into Unforgettable Experiences. Fully certified FAA Part 107 operations.</p>
+              <div class="d-flex gap-3 fs-5 mt-3">
+                <a href="#" class="text-secondary"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-secondary"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="text-secondary"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-secondary"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="col-6 col-md-2">
+              <h4 class="h6 text-white fw-bold">Explore</h4>
+              <ul class="list-unstyled text-secondary mt-3 d-flex flex-column gap-2">
+                <li><a href="index.html" class="text-decoration-none">Home</a></li>
+                <li><a href="home-2.html" class="text-decoration-none">Alternate</a></li>
+                <li><a href="#services" class="text-decoration-none">Services</a></li>
+                <li><a href="#capabilities" class="text-decoration-none">Tech Specs</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-2">
+              <h4 class="h6 text-white fw-bold">Legal</h4>
+              <ul class="list-unstyled text-secondary mt-3 d-flex flex-column gap-2">
+                <li><a href="#" class="text-decoration-none">Privacy Policy</a></li>
+                <li><a href="#" class="text-decoration-none">Terms of Service</a></li>
+                <li><a href="#" class="text-decoration-none">FAA Waivers</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h4 class="h6 text-white fw-bold">Newsletter</h4>
+              <p class="text-secondary mt-3"><small>Stay up to date on drone show tech breakthroughs.</small></p>
+              <div class="input-group mt-2">
+                <input type="email" class="form-control form-control-custom" placeholder="Your Email"
+                  aria-label="Your Email">
+                <button class="btn btn-primary-custom" type="button"><i class="bi bi-send"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <hr class="border-secondary mt-5 mb-4">
+
+          <div class="d-flex flex-wrap justify-content-between align-items-center text-secondary">
+            <p class="mb-0"><small>&copy; 2026 AeroGlow Drone Light Shows. All rights reserved.</small></p>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" title="Go to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 Bundle JS (Contains Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS Application Logic -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

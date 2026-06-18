@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | AeroGlow Drone Light Shows</title>
+  <meta name="description" content="View high-resolution photography of actual drone light shows, sky animations, and logo alignments.">
+  <link rel="icon" type="image/png" href="assets/images/drone_logo.png">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <!-- Custom Style Sheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Header / Navigation Menu -->
+  <header>
+    <nav class="navbar navbar-expand-xl navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html" id="navLogo">
+          <span class="fs-4 fw-bold text-white"><img src="assets/images/drone_logo.png" alt="AeroGlow Logo" class="me-2">AERO<span class="text-info">GLOW</span></span>
+        </a>
+        
+        <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-1"></i>
+        </button>
+        
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header border-bottom border-secondary">
+            <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-xl-center">
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="index.html">Home 1</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="home-2.html">Home 2</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="blog.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom active px-3" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="contact.html">Contact</a></li>
+            </ul>
+            
+            <div class="d-flex align-items-center gap-2 flex-wrap">
+              <button class="nav-toggle-btn rtl-toggle" id="rtlBtn" aria-label="Toggle RTL">RTL</button>
+              <button class="nav-toggle-btn theme-toggle" id="themeBtn" aria-label="Toggle Theme"></button>
+              <a href="login.html" class="btn btn-secondary-custom py-2 px-3" id="loginNav">Login</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Inner Hero -->
+    <section class="py-5 text-center position-relative aurora-bg inner-hero hero-gallery">
+      <div class="container py-5">
+        <h1 class="mb-3 text-white">Aerial Performance Showcase</h1>
+        <p class="lead text-secondary max-width-600 mx-auto">Explore high-resolution images of synchronized drone displays in stadiums, festivals, and branding events.</p>
+      </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-5 bg-dark-secondary">
+      <div class="container py-4 text-start">
+        
+        <!-- Filter Tabs -->
+        <div class="d-flex justify-content-center gap-3 mb-5 flex-wrap" id="filterTabs">
+          <button class="btn btn-primary-custom btn-sm" data-filter="all">All Displays</button>
+          <button class="btn btn-secondary-custom btn-sm" data-filter="municipal">Municipal</button>
+          <button class="btn btn-secondary-custom btn-sm" data-filter="corporate">Corporate</button>
+          <button class="btn btn-secondary-custom btn-sm" data-filter="stadium">Stadium</button>
+        </div>
+
+        <div class="gallery-masonry" id="galleryMasonry">
+          <div class="gallery-item" data-category="corporate">
+            <img src="assets/images/gallery_1.jpg" alt="Drone formation design sample">
+            <div class="gallery-item-overlay">
+              <span class="fw-bold text-white d-block">Corporate Branding</span>
+              <small class="text-secondary">Logos in the Sky</small>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="municipal">
+            <img src="assets/images/gallery_2.jpg" alt="Holiday drone celebration lights">
+            <div class="gallery-item-overlay">
+              <span class="fw-bold text-white d-block">National Day Event</span>
+              <small class="text-secondary">Holiday Celebrations</small>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="stadium">
+            <img src="assets/images/gallery_3.jpg" alt="Stadium drone show opening">
+            <div class="gallery-item-overlay">
+              <span class="fw-bold text-white d-block">Stadium Openings</span>
+              <small class="text-secondary">Sports Events</small>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="municipal">
+            <img src="assets/images/gallery_4.jpg" alt="City festival show display">
+            <div class="gallery-item-overlay">
+              <span class="fw-bold text-white d-block">City Festivals</span>
+              <small class="text-secondary">Public Gatherings</small>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="corporate">
+            <img src="assets/images/gallery_5.jpg" alt="Bespoke shapes layout">
+            <div class="gallery-item-overlay">
+              <span class="fw-bold text-white d-block">Bespoke Storytelling</span>
+              <small class="text-secondary">Shapes & Emblems</small>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="other">
+            <img src="assets/images/gallery_6.jpg" alt="Spectacular lighting coordinates">
+            <div class="gallery-item-overlay">
+              <span class="fw-bold text-white d-block">Precision Coordination</span>
+              <small class="text-secondary">RGB Pixel Sync</small>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="other">
+            <img src="assets/images/gallery_7.jpg" alt="Drone swarm coordinate details">
+            <div class="gallery-item-overlay">
+              <span class="fw-bold text-white d-block">Massive Swarm Layouts</span>
+              <small class="text-secondary">Enterprise Architecture</small>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="municipal">
+            <img src="assets/images/gallery_8.png" alt="Drone globe performance">
+            <div class="gallery-item-overlay">
+              <span class="fw-bold text-white d-block">Global Formations</span>
+              <small class="text-secondary">Harbor Light Shows</small>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="stadium">
+            <img src="assets/images/gallery_9.png" alt="Stadium eagle performance">
+            <div class="gallery-item-overlay">
+              <span class="fw-bold text-white d-block">Mascot & Logo Renders</span>
+              <small class="text-secondary">Stadium Swarms</small>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="other">
+            <img src="assets/images/gallery_10.png" alt="Launchpad setup">
+            <div class="gallery-item-overlay">
+              <span class="fw-bold text-white d-block">Pre-Flight Readiness</span>
+              <small class="text-secondary">Carbon Fiber Swarms</small>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="stadium">
+            <img src="assets/images/gallery_11.png" alt="Festival concert note show">
+            <div class="gallery-item-overlay">
+              <span class="fw-bold text-white d-block">Concert Integrations</span>
+              <small class="text-secondary">Festival Skies</small>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="corporate">
+            <img src="assets/images/gallery_12.png" alt="City car outline show">
+            <div class="gallery-item-overlay">
+              <span class="fw-bold text-white d-block">3D Product Launches</span>
+              <small class="text-secondary">Urban Skylines</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Compact, Ultra-Premium Pricing Section -->
+    <section class="py-5 bg-dark-secondary border-top border-secondary">
+      <div class="container text-center">
+        <h2 class="h3 text-white mb-3">Show Packages & Scaling Options</h2>
+        <p class="text-secondary max-width-600 mx-auto mb-5"><small>Select the scale of your sky canvas. All deployments include full safety, waivers, and crew support.</small></p>
+        
+        <div class="row g-4 justify-content-center">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="glass-card py-4 px-3 h-100 d-flex flex-column justify-content-between align-items-center">
+              <div>
+                <span class="badge bg-secondary text-info border border-info mb-3 px-3 py-2 text-uppercase fw-bold"><small>100 Drones</small></span>
+                <h3 class="h5 text-white mb-2">Lite Array</h3>
+                <p class="text-secondary mb-3"><small>Perfect for flat outlines, typography, and beach branding.</small></p>
+              </div>
+              <div>
+                <h4 class="h4 text-info fw-bold mb-3">$15,000<span class="text-secondary fs-7 fw-normal">/start</span></h4>
+                <a href="booking.html" class="btn btn-secondary-custom btn-sm w-100">Estimate Show</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="glass-card py-4 px-3 h-100 d-flex flex-column justify-content-between align-items-center" style="border-color: var(--accent-secondary); box-shadow: 0 0 15px rgba(0, 229, 255, 0.1);">
+              <div>
+                <span class="badge bg-info text-dark mb-3 px-3 py-2 text-uppercase fw-bold"><small>300 Drones</small></span>
+                <h3 class="h5 text-white mb-2">Standard Array</h3>
+                <p class="text-secondary mb-3"><small>Perfect for 3D shapes, morphing elements, and festivals.</small></p>
+              </div>
+              <div>
+                <h4 class="h4 text-info fw-bold mb-3">$35,000<span class="text-secondary fs-7 fw-normal">/start</span></h4>
+                <a href="booking.html" class="btn btn-primary-custom btn-sm w-100">Estimate Show</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="glass-card py-4 px-3 h-100 d-flex flex-column justify-content-between align-items-center">
+              <div>
+                <span class="badge bg-secondary text-info border border-info mb-3 px-3 py-2 text-uppercase fw-bold"><small>500+ Drones</small></span>
+                <h3 class="h5 text-white mb-2">Enterprise Swarm</h3>
+                <p class="text-secondary mb-3"><small>High-density photorealistic canvases, stadium launches.</small></p>
+              </div>
+              <div>
+                <h4 class="h4 text-info fw-bold mb-3">Custom Quote</h4>
+                <a href="contact.html" class="btn btn-secondary-custom btn-sm w-100">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Small Unique Section: Swarm Technical Performance Metrics -->
+    <section class="py-4 bg-dark border-top border-secondary">
+      <div class="container text-center">
+        <span class="text-info fw-bold text-uppercase d-block mb-2"><small>Technical Precision Metrics</small></span>
+        <div class="d-flex flex-wrap justify-content-center gap-4 text-secondary" style="font-size: 0.85rem;">
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-arrows-expand text-info"></i>
+            <span>Spacing Tolerance: <strong>3.5m - 5m</strong></span>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-arrow-up-circle text-info"></i>
+            <span>Max Flight Altitude: <strong>400ft AGL</strong></span>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-speedometer text-info"></i>
+            <span>Wind Limit: <strong>22 mph</strong></span>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-broadcast text-info"></i>
+            <span>Radio Sync Latency: <strong>&lt; 10ms</strong></span>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-eye text-info"></i>
+            <span>Visual Range: <strong>Up to 3 Miles</strong></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="py-5 mt-5">
+    <div class="container text-start">
+      <div class="row g-4 justify-content-between">
+        <div class="col-md-4">
+          <span class="fs-4 fw-bold text-white"><img src="assets/images/drone_logo.png" alt="AeroGlow Logo" class="me-2 footer-logo-img">AERO<span class="text-info">GLOW</span></span>
+          <p class="text-secondary mt-3">Transforming Night Skies Into Unforgettable Experiences. Fully certified FAA Part 107 operations.</p>
+          <div class="d-flex gap-3 fs-5 mt-3">
+            <a href="#" class="text-secondary"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-secondary"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-secondary"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-secondary"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <h4 class="h6 text-white fw-bold">Explore</h4>
+          <ul class="list-unstyled text-secondary mt-3 d-flex flex-column gap-2">
+            <li><a href="index.html" class="text-decoration-none">Home</a></li>
+            <li><a href="home-2.html" class="text-decoration-none">Alternate</a></li>
+            <li><a href="services.html" class="text-decoration-none">Services</a></li>
+            <li><a href="gallery.html" class="text-decoration-none">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <h4 class="h6 text-white fw-bold">Legal</h4>
+          <ul class="list-unstyled text-secondary mt-3 d-flex flex-column gap-2">
+            <li><a href="#" class="text-decoration-none">Privacy Policy</a></li>
+            <li><a href="#" class="text-decoration-none">Terms of Service</a></li>
+            <li><a href="#" class="text-decoration-none">FAA Waivers</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4 class="h6 text-white fw-bold">Newsletter</h4>
+          <p class="text-secondary mt-3"><small>Stay up to date on drone show tech breakthroughs.</small></p>
+          <div class="input-group mt-2">
+            <input type="email" class="form-control form-control-custom" placeholder="Your Email" aria-label="Your Email">
+            <button class="btn btn-primary-custom" type="button"><i class="bi bi-send"></i></button>
+          </div>
+        </div>
+      </div>
+      
+      <hr class="border-secondary mt-5 mb-4">
+      
+      <div class="d-flex flex-wrap justify-content-between align-items-center text-secondary">
+        <p class="mb-0"><small>&copy; 2026 AeroGlow Drone Light Shows. All rights reserved.</small></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" title="Go to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS Application Logic -->
+  <script src="assets/js/main.js"></script>
+  <!-- Gallery Interactive Filtering Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterButtons = document.querySelectorAll('#filterTabs button');
+      const galleryItems = document.querySelectorAll('#galleryMasonry .gallery-item');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const filter = this.getAttribute('data-filter');
+
+          // Update active button styles
+          filterButtons.forEach(btn => {
+            btn.className = 'btn btn-secondary-custom btn-sm';
+          });
+          this.className = 'btn btn-primary-custom btn-sm';
+
+          // Filter gallery items
+          galleryItems.forEach(item => {
+            const category = item.getAttribute('data-category');
+            if (filter === 'all' || category === filter) {
+              item.classList.remove('hidden');
+            } else {
+              item.classList.add('hidden');
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

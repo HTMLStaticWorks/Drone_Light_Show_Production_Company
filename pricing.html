@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing & Packages | AeroGlow Drone Light Shows</title>
+  <meta name="description" content="View pricing tiers and flight package specs for corporate branding and city celebrations.">
+  <link rel="icon" type="image/png" href="assets/images/drone_logo.png">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <!-- Custom Style Sheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  
+  <style>
+    /* Specific styling for highlighted plan as required by Rules.md */
+    .pricing-primary {
+      border: 2px solid var(--accent-secondary) !important;
+      transform: scale(1.05);
+      position: relative;
+      box-shadow: 0 10px 30px rgba(0, 229, 255, 0.2) !important;
+    }
+    .pricing-badge {
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent-secondary);
+      color: #000;
+      font-weight: 700;
+      padding: 0.25rem 1rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body class="dark-theme">
+
+  <!-- Header / Navigation Menu -->
+  <header>
+    <nav class="navbar navbar-expand-xl navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html" id="navLogo">
+          <span class="fs-4 fw-bold text-white"><img src="assets/images/drone_logo.png" alt="AeroGlow Logo" class="me-2">AERO<span class="text-info">GLOW</span></span>
+        </a>
+        
+        <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-1"></i>
+        </button>
+        
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header border-bottom border-secondary">
+            <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-xl-center">
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="index.html">Home 1</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="home-2.html">Home 2</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="blog.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="contact.html">Contact</a></li>
+            </ul>
+            
+            <div class="d-flex align-items-center gap-2 flex-wrap">
+              <button class="nav-toggle-btn rtl-toggle" id="rtlBtn" aria-label="Toggle RTL">RTL</button>
+              <button class="nav-toggle-btn theme-toggle" id="themeBtn" aria-label="Toggle Theme"></button>
+              <a href="login.html" class="btn btn-secondary-custom py-2 px-3" id="loginNav">Login</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Inner Hero -->
+    <section class="py-5 text-center position-relative aurora-bg inner-hero hero-pricing">
+      <div class="container py-5">
+        <h1 class="mb-3 text-white">Transparent Deployment Packages</h1>
+        <p class="lead text-secondary max-width-600 mx-auto">Scalable drone array configurations to meet your event coverage requirements.</p>
+      </div>
+    </section>
+
+    <!-- Pricing Matrix -->
+    <section class="py-5 bg-dark-secondary">
+      <div class="container py-4 text-start">
+        <div class="row g-4 align-items-center justify-content-center">
+          
+          <!-- Tier 1: Secondary -->
+          <div class="col-md-4">
+            <div class="glass-card h-100 text-center">
+              <span class="text-uppercase text-secondary fw-bold fs-7">Standard Show</span>
+              <h3 class="h2 text-white mt-2 mb-1">100 Drones</h3>
+              <p class="text-secondary mb-4">Starting at $15,000</p>
+              <hr class="border-secondary mb-4">
+              <ul class="list-unstyled d-flex flex-column gap-3 text-secondary text-start mb-5">
+                <li><i class="bi bi-check2 text-info me-2"></i> 2D Text & Flat Logo Animation</li>
+                <li><i class="bi bi-check2 text-info me-2"></i> 10-Minute Flight Duration</li>
+                <li><i class="bi bi-check2 text-info me-2"></i> FAA Permit Auditing</li>
+                <li><i class="bi bi-check2 text-info me-2"></i> Standard Telemetry Backups</li>
+                <li><i class="bi bi-x text-danger me-2"></i> No 3D Morphing Elements</li>
+              </ul>
+              <a href="booking.html" class="btn btn-secondary-custom w-100">Select Standard</a>
+            </div>
+          </div>
+          
+          <!-- Tier 2: Primary (Highlighted - Popular) -->
+          <div class="col-md-4">
+            <div class="glass-card h-100 text-center pricing-primary">
+              <div class="pricing-badge">POPULAR PLAN</div>
+              <span class="text-uppercase text-info fw-bold fs-7">Premium Show</span>
+              <h3 class="h2 text-white mt-2 mb-1">300 Drones</h3>
+              <p class="text-secondary mb-4">Starting at $35,000</p>
+              <hr class="border-secondary mb-4">
+              <ul class="list-unstyled d-flex flex-column gap-3 text-secondary text-start mb-5">
+                <li><i class="bi bi-check2 text-info me-2"></i> Core 3D Shape Morphing</li>
+                <li><i class="bi bi-check2 text-info me-2"></i> 12-Minute Flight Duration</li>
+                <li><i class="bi bi-check2 text-info me-2"></i> Full Insurance Waiver Handling</li>
+                <li><i class="bi bi-check2 text-info me-2"></i> Dual-Station RTK GPS Support</li>
+                <li><i class="bi bi-check2 text-info me-2"></i> Music Integration Support</li>
+              </ul>
+              <a href="booking.html" class="btn btn-primary-custom w-100">Select Premium</a>
+            </div>
+          </div>
+          
+          <!-- Tier 3: Secondary -->
+          <div class="col-md-4">
+            <div class="glass-card h-100 text-center">
+              <span class="text-uppercase text-secondary fw-bold fs-7">Mega Show</span>
+              <h3 class="h2 text-white mt-2 mb-1">500+ Drones</h3>
+              <p class="text-secondary mb-4">Custom Enterprise Quotes</p>
+              <hr class="border-secondary mb-4">
+              <ul class="list-unstyled d-flex flex-column gap-3 text-secondary text-start mb-5">
+                <li><i class="bi bi-check2 text-info me-2"></i> Dense 3D Organic Animations</li>
+                <li><i class="bi bi-check2 text-info me-2"></i> Max 15-Minute Flight Duration</li>
+                <li><i class="bi bi-check2 text-info me-2"></i> Triple Telemetry Safety Grid</li>
+                <li><i class="bi bi-check2 text-info me-2"></i> On-site Pyro / Laser Synchronization</li>
+                <li><i class="bi bi-check2 text-info me-2"></i> Multi-station Flight Controls</li>
+              </ul>
+              <a href="booking.html" class="btn btn-secondary-custom w-100">Request Custom Quote</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="py-5 mt-5">
+    <div class="container text-start">
+      <div class="row g-4 justify-content-between">
+        <div class="col-md-4">
+          <span class="fs-4 fw-bold text-white"><img src="assets/images/drone_logo.png" alt="AeroGlow Logo" class="me-2 footer-logo-img">AERO<span class="text-info">GLOW</span></span>
+          <p class="text-secondary mt-3">Transforming Night Skies Into Unforgettable Experiences. Fully certified FAA Part 107 operations.</p>
+          <div class="d-flex gap-3 fs-5 mt-3">
+            <a href="#" class="text-secondary"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-secondary"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-secondary"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-secondary"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <h4 class="h6 text-white fw-bold">Explore</h4>
+          <ul class="list-unstyled text-secondary mt-3 d-flex flex-column gap-2">
+            <li><a href="index.html" class="text-decoration-none">Home</a></li>
+            <li><a href="home-2.html" class="text-decoration-none">Alternate</a></li>
+            <li><a href="services.html" class="text-decoration-none">Services</a></li>
+            <li><a href="gallery.html" class="text-decoration-none">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <h4 class="h6 text-white fw-bold">Legal</h4>
+          <ul class="list-unstyled text-secondary mt-3 d-flex flex-column gap-2">
+            <li><a href="#" class="text-decoration-none">Privacy Policy</a></li>
+            <li><a href="#" class="text-decoration-none">Terms of Service</a></li>
+            <li><a href="#" class="text-decoration-none">FAA Waivers</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4 class="h6 text-white fw-bold">Newsletter</h4>
+          <p class="text-secondary mt-3"><small>Stay up to date on drone show tech breakthroughs.</small></p>
+          <div class="input-group mt-2">
+            <input type="email" class="form-control form-control-custom" placeholder="Your Email" aria-label="Your Email">
+            <button class="btn btn-primary-custom" type="button"><i class="bi bi-send"></i></button>
+          </div>
+        </div>
+      </div>
+      
+      <hr class="border-secondary mt-5 mb-4">
+      
+      <div class="d-flex flex-wrap justify-content-between align-items-center text-secondary">
+        <p class="mb-0"><small>&copy; 2026 AeroGlow Drone Light Shows. All rights reserved.</small></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" title="Go to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS Application Logic -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

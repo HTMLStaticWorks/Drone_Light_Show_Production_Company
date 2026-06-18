@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog & Insights | AeroGlow Drone Light Shows</title>
+  <meta name="description" content="Read our technical journals and industry news regarding drone light show engineering and airspace safety.">
+  <link rel="icon" type="image/png" href="assets/images/drone_logo.png">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <!-- Custom Style Sheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Header / Navigation Menu -->
+  <header>
+    <nav class="navbar navbar-expand-xl navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html" id="navLogo">
+          <span class="fs-4 fw-bold text-white"><img src="assets/images/drone_logo.png" alt="AeroGlow Logo" class="me-2">AERO<span class="text-info">GLOW</span></span>
+        </a>
+        
+        <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-1"></i>
+        </button>
+        
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header border-bottom border-secondary">
+            <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-xl-center">
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="index.html">Home 1</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="home-2.html">Home 2</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom active px-3" href="blog.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-custom px-3" href="contact.html">Contact</a></li>
+            </ul>
+            
+            <div class="d-flex align-items-center gap-2 flex-wrap">
+              <button class="nav-toggle-btn rtl-toggle" id="rtlBtn" aria-label="Toggle RTL">RTL</button>
+              <button class="nav-toggle-btn theme-toggle" id="themeBtn" aria-label="Toggle Theme"></button>
+              <a href="login.html" class="btn btn-secondary-custom py-2 px-3" id="loginNav">Login</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Inner Hero -->
+    <section class="py-5 text-center position-relative aurora-bg inner-hero hero-blog">
+      <div class="container py-5">
+        <h1 class="mb-3 text-white">Sky Art & Tech Insights</h1>
+        <p class="lead text-secondary max-width-600 mx-auto">Journals tracing software enhancements, regulatory standards, and show logs.</p>
+      </div>
+    </section>
+
+    <!-- Blogs List Section -->
+    <section class="py-5 bg-dark-secondary">
+      <div class="container py-4 text-start">
+        <div class="row g-4">
+          <!-- Blog Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card h-100 d-flex flex-column justify-content-between">
+              <div>
+                <img src="assets/images/gallery_1.jpg" class="img-fluid rounded mb-3 blog-card-img" alt="Drone flight algorithms">
+                <span class="text-info fw-bold text-uppercase d-block mb-2"><small>Technology</small></span>
+                <h3 class="h5 text-white">How RTK GPS Positioning Enhances Flight Resolution</h3>
+                <p class="text-secondary mt-2"><small>Understanding how real-time kinematic calculations enable centimeter-level coordinates for close-range formations.</small></p>
+              </div>
+              <div class="mt-4 border-top border-secondary pt-3 d-flex justify-content-between align-items-center">
+                <small class="text-secondary">June 15, 2026</small>
+                <a href="blog-details.html" class="text-info text-decoration-none">Read Post <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Blog Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card h-100 d-flex flex-column justify-content-between">
+              <div>
+                <img src="assets/images/gallery_3.jpg" class="img-fluid rounded mb-3 blog-card-img" alt="Municipal permissions">
+                <span class="text-info fw-bold text-uppercase d-block mb-2"><small>Regulations</small></span>
+                <h3 class="h5 text-white">FAA Part 107 Waiver Guidelines for Night Shows</h3>
+                <p class="text-secondary mt-2"><small>A breakdown of mandatory documentation and safety risk checklists needed to secure authorizations over crowded assemblies.</small></p>
+              </div>
+              <div class="mt-4 border-top border-secondary pt-3 d-flex justify-content-between align-items-center">
+                <small class="text-secondary">May 28, 2026</small>
+                <a href="blog-details.html" class="text-info text-decoration-none">Read Post <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Blog Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card h-100 d-flex flex-column justify-content-between">
+              <div>
+                <img src="assets/images/gallery_4.jpg" class="img-fluid rounded mb-3 blog-card-img" alt="Creative animations">
+                <span class="text-info fw-bold text-uppercase d-block mb-2"><small>Art & Storytelling</small></span>
+                <h3 class="h5 text-white">Animating in 3D Space: Pixels vs. Drones</h3>
+                <p class="text-secondary mt-2"><small>Why rigging animated drone paths requires taking speed, inertia, and visual scaling into critical account compared to screen pixels.</small></p>
+              </div>
+              <div class="mt-4 border-top border-secondary pt-3 d-flex justify-content-between align-items-center">
+                <small class="text-secondary">April 12, 2026</small>
+                <a href="blog-details.html" class="text-info text-decoration-none">Read Post <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Card 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card h-100 d-flex flex-column justify-content-between">
+              <div>
+                <img src="assets/images/drone_atc_safety.png" class="img-fluid rounded mb-3 blog-card-img" alt="ATC airspace tracking interface">
+                <span class="text-info fw-bold text-uppercase d-block mb-2"><small>Airspace & Safety</small></span>
+                <h3 class="h5 text-white">Real-Time ATC Integration for Large-Scale Swarms</h3>
+                <p class="text-secondary mt-2"><small>A look into telemetry transponders, geofencing coordinates, and how ground control stations coordinate airspace access with airports.</small></p>
+              </div>
+              <div class="mt-4 border-top border-secondary pt-3 d-flex justify-content-between align-items-center">
+                <small class="text-secondary">March 19, 2026</small>
+                <a href="blog-details.html" class="text-info text-decoration-none">Read Post <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Card 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card h-100 d-flex flex-column justify-content-between">
+              <div>
+                <img src="assets/images/drone_animation_wireframe.png" class="img-fluid rounded mb-3 blog-card-img" alt="3D wireframe drone swarm layout animation preview">
+                <span class="text-info fw-bold text-uppercase d-block mb-2"><small>Art & Storytelling</small></span>
+                <h3 class="h5 text-white">Formations Unfolded: 3D Animation to Rigging</h3>
+                <p class="text-secondary mt-2"><small>Breaking down our animation workflow from importing OBJ models to exportable coordinates compatible with our drone swarms.</small></p>
+              </div>
+              <div class="mt-4 border-top border-secondary pt-3 d-flex justify-content-between align-items-center">
+                <small class="text-secondary">February 05, 2026</small>
+                <a href="blog-details.html" class="text-info text-decoration-none">Read Post <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Card 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card h-100 d-flex flex-column justify-content-between">
+              <div>
+                <img src="assets/images/drone_led_light.png" class="img-fluid rounded mb-3 blog-card-img" alt="Detailed close up of custom RGBW LED lens payload">
+                <span class="text-info fw-bold text-uppercase d-block mb-2"><small>Engineering</small></span>
+                <h3 class="h5 text-white">The Engineering Behind 1,000-Foot LED Visibility</h3>
+                <p class="text-secondary mt-2"><small>Testing custom high-performance optical lenses and heat dissipation systems to deliver vibrant color gamuts visible in ambient city light.</small></p>
+              </div>
+              <div class="mt-4 border-top border-secondary pt-3 d-flex justify-content-between align-items-center">
+                <small class="text-secondary">January 14, 2026</small>
+                <a href="blog-details.html" class="text-info text-decoration-none">Read Post <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Unique Interactive Section: Airspace Feasibility & Weather Checker -->
+    <section class="py-5 bg-dark border-top border-secondary position-relative aurora-bg">
+      <div class="container py-4 text-start">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <h2 class="text-white mb-3">Live Show Feasibility</h2>
+            <p class="text-secondary mb-4">Want to know if a drone light show can fly in your area or under current weather conditions? Adjust the parameters to evaluate compliance with aviation safety guidelines and FAA flight regulations.</p>
+            <div class="d-flex flex-column gap-3">
+              <div class="d-flex align-items-center gap-3">
+                <i class="bi bi-shield-check text-info fs-3"></i>
+                <div>
+                  <h4 class="h6 text-white mb-0">Automatic Regulatory Calculations</h4>
+                  <p class="text-secondary mb-0"><small>Instantly checks airspace constraints against standard FAA waiver templates.</small></p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <i class="bi bi-wind text-info fs-3"></i>
+                <div>
+                  <h4 class="h6 text-white mb-0">Weather Threshold Tolerance</h4>
+                  <p class="text-secondary mb-0"><small>Flags caution/blocks if forecasted wind velocities or temperatures violate cell thresholds.</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="feasibility-widget">
+              <h3 class="h5 text-white mb-4 border-bottom border-secondary pb-3"><i class="bi bi-sliders me-2 text-info"></i>Environmental & Airspace Parameters</h3>
+              
+              <div class="row g-4">
+                <!-- Wind Speed Slider -->
+                <div class="col-md-6">
+                  <label for="windSlider" class="form-label text-secondary d-flex justify-content-between">
+                    <span>Wind Velocity</span>
+                    <span class="text-white fw-bold"><span id="windVal">12</span> mph</span>
+                  </label>
+                  <input type="range" class="form-range" id="windSlider" min="0" max="35" value="12">
+                </div>
+                
+                <!-- Airspace Dropdown -->
+                <div class="col-md-6">
+                  <label for="airspaceSelect" class="form-label text-secondary">Airspace Classification</label>
+                  <select class="form-select form-control-custom" id="airspaceSelect">
+                    <option value="G" selected>Class G (Uncontrolled - Open Sky)</option>
+                    <option value="E">Class E (Controlled / Transition)</option>
+                    <option value="D">Class D (Controlled / Small Airport)</option>
+                    <option value="C">Class C (Controlled / Medium Airport)</option>
+                    <option value="B">Class B (Controlled / Major Hub)</option>
+                  </select>
+                </div>
+
+                <!-- Temperature Slider -->
+                <div class="col-md-6">
+                  <label for="tempSlider" class="form-label text-secondary d-flex justify-content-between">
+                    <span>Ambient Temperature</span>
+                    <span class="text-white fw-bold"><span id="tempVal">72</span>°F</span>
+                  </label>
+                  <input type="range" class="form-range" id="tempSlider" min="0" max="110" value="72">
+                </div>
+
+                <!-- Show Size (Drones) -->
+                <div class="col-md-6">
+                  <label for="showSizeSelect" class="form-label text-secondary">Show Scale (Drones)</label>
+                  <select class="form-select form-control-custom" id="showSizeSelect">
+                    <option value="100" selected>100 Drones (Micro Show)</option>
+                    <option value="300">300 Drones (Standard Show)</option>
+                    <option value="600">600 Drones (Mega Show)</option>
+                    <option value="1000">1000+ Drones (Spectacular Show)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Output Block -->
+              <div class="mt-5 p-4 rounded bg-dark border border-secondary">
+                <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+                  <div>
+                    <span class="text-secondary d-block"><small>FEASIBILITY ANALYSIS STATUS</small></span>
+                    <span id="feasibilityStatus" class="status-badge-glow status-safe mt-1">
+                      <i class="bi bi-check-circle-fill"></i> Flight Safe
+                    </span>
+                  </div>
+                  <div class="text-end">
+                    <span class="text-secondary d-block"><small>RTK GPS RESOLUTION</small></span>
+                    <span id="gpsStatus" class="text-info fw-bold">Centimeter Level (RTK Fix)</span>
+                  </div>
+                </div>
+                
+                <hr class="border-secondary my-3">
+                
+                <div id="feasibilityDetails">
+                  <p class="mb-0 text-secondary"><small><i class="bi bi-info-circle-fill text-info me-2"></i>Airspace is uncontrolled. Standard operations are permitted under standard FAA rules.</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Airspace Calculator Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const windSlider = document.getElementById('windSlider');
+        const windVal = document.getElementById('windVal');
+        const airspaceSelect = document.getElementById('airspaceSelect');
+        const tempSlider = document.getElementById('tempSlider');
+        const tempVal = document.getElementById('tempVal');
+        const showSizeSelect = document.getElementById('showSizeSelect');
+
+        const feasibilityStatus = document.getElementById('feasibilityStatus');
+        const gpsStatus = document.getElementById('gpsStatus');
+        const feasibilityDetails = document.getElementById('feasibilityDetails');
+
+        function updateFeasibility() {
+          const wind = parseInt(windSlider.value);
+          const airspace = airspaceSelect.value;
+          const temp = parseInt(tempSlider.value);
+          const showSize = parseInt(showSizeSelect.value);
+
+          windVal.textContent = wind;
+          tempVal.textContent = temp;
+
+          let status = 'safe'; // safe, caution, unsafe
+          let reasons = [];
+
+          // Wind rules
+          if (wind >= 22) {
+            status = 'unsafe';
+            reasons.push('Wind velocity exceeds the critical 22 mph safety limit. Drones cannot maintain formation stability.');
+          } else if (wind >= 15) {
+            if (status !== 'unsafe') status = 'caution';
+            reasons.push('High winds (15-21 mph) will consume battery faster to maintain positions.');
+          }
+
+          // Temperature rules
+          if (temp <= 25 || temp >= 104) {
+            status = 'unsafe';
+            reasons.push('Extreme temperatures (' + temp + '°F) fall outside lithium-polymer battery operating specifications.');
+          } else if (temp <= 40 || temp >= 90) {
+            if (status !== 'unsafe') status = 'caution';
+            reasons.push('Temperature (' + temp + '°F) impacts battery efficiency. Expected flight time reduced by 15-20%.');
+          }
+
+          // Airspace rules
+          if (airspace === 'B') {
+            if (status !== 'unsafe') status = 'caution';
+            reasons.push('Class B airspace: Requires direct coordination with ATC and a pre-approved FAA airspace waiver (typical lead time: 90 days).');
+          } else if (airspace === 'C' || airspace === 'D') {
+            if (status !== 'unsafe') status = 'caution';
+            reasons.push('Class C/D airspace: LAANC authorization or FAA coordinate approval is required before takeoff.');
+          } else if (airspace === 'E') {
+            reasons.push('Class E airspace: Monitor regional terminal airspace advisories. No special waiver required.');
+          } else {
+            reasons.push('Class G airspace: Uncontrolled open sky. Standard FAA rules apply. Ready for flight.');
+          }
+
+          // GPS accuracy affected by large swarm size and high winds
+          if (wind >= 15 && showSize >= 600) {
+            gpsStatus.textContent = 'Degraded (Float RTK)';
+            gpsStatus.className = 'text-warning fw-bold';
+            reasons.push('Swarms exceeding 600 drones in high winds require safety buffers wider than 5 meters.');
+          } else {
+            gpsStatus.textContent = 'Centimeter Level (RTK Fix)';
+            gpsStatus.className = 'text-info fw-bold';
+          }
+
+          // Apply Status UI
+          if (status === 'unsafe') {
+            feasibilityStatus.className = 'status-badge-glow status-unsafe mt-1';
+            feasibilityStatus.innerHTML = '<i class="bi bi-x-circle-fill"></i> Flight Blocked';
+          } else if (status === 'caution') {
+            feasibilityStatus.className = 'status-badge-glow status-caution mt-1';
+            feasibilityStatus.innerHTML = '<i class="bi bi-exclamation-triangle-fill"></i> Caution Advised';
+          } else {
+            feasibilityStatus.className = 'status-badge-glow status-safe mt-1';
+            feasibilityStatus.innerHTML = '<i class="bi bi-check-circle-fill"></i> Flight Safe';
+          }
+
+          // List reasons
+          feasibilityDetails.innerHTML = '';
+          reasons.forEach(r => {
+            const p = document.createElement('p');
+            p.className = 'mb-2 text-secondary';
+            p.innerHTML = `<small><i class="bi bi-dot text-info"></i> ${r}</small>`;
+            feasibilityDetails.appendChild(p);
+          });
+        }
+
+        windSlider.addEventListener('input', updateFeasibility);
+        airspaceSelect.addEventListener('change', updateFeasibility);
+        tempSlider.addEventListener('input', updateFeasibility);
+        showSizeSelect.addEventListener('change', updateFeasibility);
+
+        updateFeasibility();
+      });
+    </script>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="py-5 mt-5">
+    <div class="container text-start">
+      <div class="row g-4 justify-content-between">
+        <div class="col-md-4">
+          <span class="fs-4 fw-bold text-white"><img src="assets/images/drone_logo.png" alt="AeroGlow Logo" class="me-2 footer-logo-img">AERO<span class="text-info">GLOW</span></span>
+          <p class="text-secondary mt-3">Transforming Night Skies Into Unforgettable Experiences. Fully certified FAA Part 107 operations.</p>
+          <div class="d-flex gap-3 fs-5 mt-3">
+            <a href="#" class="text-secondary"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-secondary"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-secondary"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-secondary"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <h4 class="h6 text-white fw-bold">Explore</h4>
+          <ul class="list-unstyled text-secondary mt-3 d-flex flex-column gap-2">
+            <li><a href="index.html" class="text-decoration-none">Home</a></li>
+            <li><a href="home-2.html" class="text-decoration-none">Alternate</a></li>
+            <li><a href="services.html" class="text-decoration-none">Services</a></li>
+            <li><a href="gallery.html" class="text-decoration-none">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <h4 class="h6 text-white fw-bold">Legal</h4>
+          <ul class="list-unstyled text-secondary mt-3 d-flex flex-column gap-2">
+            <li><a href="#" class="text-decoration-none">Privacy Policy</a></li>
+            <li><a href="#" class="text-decoration-none">Terms of Service</a></li>
+            <li><a href="#" class="text-decoration-none">FAA Waivers</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4 class="h6 text-white fw-bold">Newsletter</h4>
+          <p class="text-secondary mt-3"><small>Stay up to date on drone show tech breakthroughs.</small></p>
+          <div class="input-group mt-2">
+            <input type="email" class="form-control form-control-custom" placeholder="Your Email" aria-label="Your Email">
+            <button class="btn btn-primary-custom" type="button"><i class="bi bi-send"></i></button>
+          </div>
+        </div>
+      </div>
+      
+      <hr class="border-secondary mt-5 mb-4">
+      
+      <div class="d-flex flex-wrap justify-content-between align-items-center text-secondary">
+        <p class="mb-0"><small>&copy; 2026 AeroGlow Drone Light Shows. All rights reserved.</small></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" title="Go to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS Application Logic -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
