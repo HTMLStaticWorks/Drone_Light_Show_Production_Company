@@ -1,62 +1,84 @@
 /* RTL Styles */
-body[dir="rtl"] {
+[dir="rtl"] body {
   text-align: right;
 }
 
-body[dir="rtl"] .slide-indicator {
+[dir="rtl"] .slide-indicator {
   right: 2rem;
   left: auto;
 }
 
-body[dir="rtl"] .back-to-top {
+[dir="rtl"] .back-to-top {
   left: 2rem;
   right: auto;
 }
 
-body[dir="rtl"] .stats-floating-card {
-  left: 5%;
-  right: auto;
+[dir="rtl"] .stats-floating-card {
+  left: 5% !important;
+  right: auto !important;
 }
 
-body[dir="rtl"] .timeline-container {
+[dir="rtl"] .timeline-container {
   padding-right: 2rem;
   padding-left: 0;
   border-right: 2px solid var(--glass-border);
   border-left: none;
 }
 
-body[dir="rtl"] .timeline-item::before {
+[dir="rtl"] .timeline-item::before {
   right: -2.5rem;
   left: auto;
 }
 
-body[dir="rtl"] .ms-auto {
+[dir="rtl"] .ms-auto {
   margin-right: auto !important;
   margin-left: 0 !important;
 }
 
-body[dir="rtl"] .me-auto {
+[dir="rtl"] .me-auto {
   margin-left: auto !important;
   margin-right: 0 !important;
 }
 
-body[dir="rtl"] .text-md-end {
+[dir="rtl"] .text-md-end {
   text-align: left !important;
 }
 
-body[dir="rtl"] .text-md-start {
+[dir="rtl"] .text-md-start {
   text-align: right !important;
 }
 
-body[dir="rtl"] .text-start {
+[dir="rtl"] .text-start {
   text-align: right !important;
 }
 
-body[dir="rtl"] .text-end {
+[dir="rtl"] .text-end {
   text-align: left !important;
 }
 
-body[dir="rtl"] .me-2 {
+[dir="rtl"] .me-2 {
   margin-left: 0.5rem !important;
   margin-right: 0 !important;
+}
+
+[dir="rtl"] .accordion-button::after {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+/* Fix input-group border-radius in RTL */
+[dir="rtl"] .input-group > .form-control {
+  border-top-right-radius: var(--border-radius-custom) !important;
+  border-bottom-right-radius: var(--border-radius-custom) !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+[dir="rtl"] .input-group > .btn {
+  border-top-left-radius: var(--border-radius-custom) !important;
+  border-bottom-left-radius: var(--border-radius-custom) !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  margin-right: -1px !important;
+  margin-left: 0 !important;
 }

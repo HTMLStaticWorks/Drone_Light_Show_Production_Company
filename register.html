@@ -47,15 +47,15 @@
 </head>
 <body class="dark-theme">
 
-  <!-- Top-Right Toggles (Only theme and RTL) -->
-  <div class="auth-toggles">
-    <button class="nav-toggle-btn rtl-toggle" id="rtlBtn" aria-label="Toggle RTL">RTL</button>
-    <button class="nav-toggle-btn theme-toggle" id="themeBtn" aria-label="Toggle Theme"></button>
-  </div>
-
   <!-- Main Content Area -->
   <main class="auth-container aurora-bg">
-    <div class="auth-card glass-card text-center">
+    <!-- Top-Right Toggles (Only theme and RTL) -->
+    <div class="auth-toggles">
+      <button class="nav-toggle-btn rtl-toggle" id="rtlBtn" aria-label="Toggle RTL">RTL</button>
+      <button class="nav-toggle-btn theme-toggle" id="themeBtn" aria-label="Toggle Theme"></button>
+    </div>
+
+    <div class="auth-card glass-card text-center mt-5 mt-md-0">
       <!-- Site Logo -->
       <a href="index.html" class="d-inline-block mb-4 text-decoration-none">
         <span class="fs-4 fw-bold text-white">
@@ -84,7 +84,7 @@
           <label for="password" class="form-label text-white small">Password</label>
           <div class="input-group">
             <input type="password" class="form-control form-control-custom" id="password" required placeholder="••••••••">
-            <button class="btn btn-outline-secondary border-secondary-subtle" type="button" id="passwordToggle" style="border-radius: 0 var(--border-radius-custom) var(--border-radius-custom) 0; background: rgba(255,255,255,0.05); color: #fff;">
+            <button class="btn btn-outline-secondary border-secondary-subtle" type="button" id="passwordToggle" style="border-radius: 0 var(--border-radius-custom) var(--border-radius-custom) 0; background: var(--glass-bg); color: var(--text-primary);">
               <i class="bi bi-eye-slash"></i>
             </button>
           </div>
@@ -95,7 +95,7 @@
           <label for="confirmPassword" class="form-label text-white small">Confirm Password</label>
           <div class="input-group">
             <input type="password" class="form-control form-control-custom" id="confirmPassword" required placeholder="••••••••">
-            <button class="btn btn-outline-secondary border-secondary-subtle" type="button" id="confirmPasswordToggle" style="border-radius: 0 var(--border-radius-custom) var(--border-radius-custom) 0; background: rgba(255,255,255,0.05); color: #fff;">
+            <button class="btn btn-outline-secondary border-secondary-subtle" type="button" id="confirmPasswordToggle" style="border-radius: 0 var(--border-radius-custom) var(--border-radius-custom) 0; background: var(--glass-bg); color: var(--text-primary);">
               <i class="bi bi-eye-slash"></i>
             </button>
           </div>
@@ -121,7 +121,7 @@
       </div>
       
       <!-- Social Signups -->
-      <div class="d-flex gap-3 mb-4">
+      <div class="d-flex flex-column flex-sm-row gap-3 mb-4">
         <button class="btn btn-secondary-custom w-100 py-2 d-flex align-items-center justify-content-center gap-2">
           <i class="bi bi-google"></i> Google
         </button>

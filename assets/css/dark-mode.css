@@ -124,13 +124,26 @@ body:not(.dark-theme) .accordion-custom .accordion-button::after {
 }
 
 body:not(.dark-theme) .form-control-custom {
-  background: #ffffff;
+  background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #0d1023 !important;
 }
 
 body:not(.dark-theme) .form-control-custom::placeholder {
-  color: #6c757d;
+  color: #6c757d !important;
+  opacity: 1;
+}
+
+body:not(.dark-theme) .form-select.form-control-custom {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 16px 12px;
+}
+
+body:not(.dark-theme) .form-select.form-control-custom option {
+  background-color: #ffffff;
+  color: #0d1023;
 }
 
 body:not(.dark-theme) .btn-secondary-custom {
@@ -154,7 +167,9 @@ body:not(.dark-theme) .timeline-item .text-white {
 /* Keep headers white inside the permanently-dark showreel section during light theme */
 body:not(.dark-theme) #showreel .glass-card h3,
 body:not(.dark-theme) #showreel .glass-card .text-white,
-body:not(.dark-theme) .table-dark .text-white {
+body:not(.dark-theme) .table-dark .text-white,
+body:not(.dark-theme) #previous-works .position-absolute .text-white,
+body:not(.dark-theme) .badge.bg-dark {
   color: #ffffff !important;
 }
 
@@ -185,4 +200,26 @@ body:not(.dark-theme) .bg-dark .glass-card p {
 /* Make offcanvas close button visible in light theme */
 body:not(.dark-theme) .offcanvas .btn-close {
   filter: none !important;
+}
+body:not(.dark-theme) .back-to-top {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  color: var(--accent-secondary);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+body:not(.dark-theme) .back-to-top:hover {
+  background: var(--accent-secondary);
+  color: #ffffff !important;
+  border-color: var(--accent-secondary);
+}
+
+/* Light Theme overrides for Blog Read More CTA */
+body:not(.dark-theme) .blog-read-more {
+  color: var(--accent-primary);
+}
+
+body:not(.dark-theme) .blog-read-more:hover {
+  color: #0d1023 !important;
+  text-shadow: none;
 }
