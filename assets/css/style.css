@@ -501,6 +501,16 @@ footer {
   background: #03050d;
 }
 
+footer a {
+  color: var(--text-secondary);
+  transition: var(--transition-smooth);
+}
+
+footer a:hover {
+  color: var(--accent-secondary);
+  text-decoration: none;
+}
+
 /* Form validation styles styling */
 .form-control-custom {
   background-color: rgba(255, 255, 255, 0.05);
