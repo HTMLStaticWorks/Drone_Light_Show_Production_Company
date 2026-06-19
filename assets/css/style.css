@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 :root {
   --bg-primary: #050816;
@@ -10,7 +10,7 @@
   --text-secondary: #b8c0d6;
   --glass-bg: rgba(255, 255, 255, 0.03);
   --glass-border: rgba(255, 255, 255, 0.08);
-  --font-global: 'Space Grotesk', sans-serif;
+  --font-global: 'Roboto', sans-serif;
   --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   --border-radius-custom: 6px;
 }
@@ -60,24 +60,18 @@ body {
 h1,
 .h1 {
   font-size: clamp(2.2rem, 8vw, 6rem);
-  font-weight: 580;
-  letter-spacing: 0.05em;
-  line-height: 1.1;
-  background: linear-gradient(135deg, #ffffff 30%, var(--accent-secondary) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 1.2;
+  color: var(--text-primary);
 }
 
 h2,
 .h2 {
   font-size: clamp(1.8rem, 6vw, 4.0rem);
-  font-weight: 540;
-  letter-spacing: 0.04em;
-  background: linear-gradient(135deg, #ffffff 40%, var(--accent-primary) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  letter-spacing: normal;
+  color: var(--text-primary);
 }
 
 h3,
@@ -254,14 +248,15 @@ p,
   height: 100%;
   overflow: hidden;
   z-index: -1;
-  background: url('../images/hero_home1.png') no-repeat center center;
-  background-size: cover;
+  background-color: #050816;
 }
 
 .video-bg {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  opacity: 0.8;
 }
 
 .video-overlay {
@@ -730,22 +725,18 @@ body:not(.dark-theme) .offcanvas #loginNav:hover {
 .video-hero h1,
 .home-2-hero h1,
 .inner-hero h1 {
-  background: linear-gradient(135deg, #ffffff 30%, var(--accent-secondary) 100%) !important;
-  -webkit-background-clip: text !important;
-  background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.25) !important;
-  text-shadow:
-    0 0 20px rgba(0, 229, 255, 0.45),
-    0 4px 15px rgba(0, 0, 0, 0.9),
-    0 2px 4px rgba(0, 0, 0, 0.95) !important;
+  color: #ffffff !important;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8) !important;
+  background: none !important;
+  -webkit-text-fill-color: initial !important;
+  -webkit-text-stroke: initial !important;
 }
 
 .video-hero p,
 .home-2-hero p,
 .inner-hero p {
-  color: #b8c0d6 !important;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8), 0 1px 3px rgba(0, 0, 0, 0.95) !important;
+  color: #ffffff !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8) !important;
 }
 
 /* Showreel Section High Contrast Text Overrides (always dark bg due to video) */
